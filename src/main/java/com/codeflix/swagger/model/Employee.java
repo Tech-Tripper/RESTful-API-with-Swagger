@@ -42,7 +42,7 @@ public class Employee {
     }
 
 
-    @Column(name = "last-name", nullable = false)
+    @Column(name = "last_name", nullable = false)
     public String getLastName() {
         return lastName;
     }
