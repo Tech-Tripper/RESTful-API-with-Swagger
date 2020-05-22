@@ -1,14 +1,26 @@
 package com.codeflix.swagger.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 
 
 @Entity
 @Table(name = "employees")
+@ApiModel(description = "Details about the Employee Entity/Object")
 public class Employee {
+
+    @ApiModelProperty(notes = "The database generated employee Id")
     private long id;
+
+    @ApiModelProperty(notes = "The employee first name")
     private String firstName;
+
+    @ApiModelProperty(notes = "The employee last name")
     private String lastName;
+
+    @ApiModelProperty(notes = "The employee email id")
     private String emailId;
 
     public Employee(){
